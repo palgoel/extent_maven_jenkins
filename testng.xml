@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="2" name="Test">
+  <test thread-count="2" name="Test_1">
+   <groups>
+     <run>
+     <include name = "Smoke"/>
+     </run>
+   </groups>
    	 <classes>
-      	<class name="extent_report.test_report1"/>
      	<class name="extent_report.test_report"/>
+     	<class name="extent_report.test_report1"/>
      </classes>
   </test> <!-- Test -->
+  <test thread-count="2" name="Test_2">
+   <groups>
+     <run>
+     <include name = "Smoke"/>
+     </run>
+   </groups>
+   	 <classes>
+      	<class name="extent_report.test_report1"/>
+     </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->
